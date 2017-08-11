@@ -12,7 +12,7 @@ mongorestore --host mongodb1.example.net --port 37017 --username user --password
 ```
 
 
-## DNS (oh-my...)
+## Networking (oh-my...)
 #### Add additional DNS servers to host
 ```
 /etc/sysconfig/network-scripts/ifcfg-eth0
