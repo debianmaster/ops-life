@@ -12,6 +12,7 @@ mongorestore --host mongodb1.example.net --port 37017 --username user --password
 ```
 
 
+## DNS (oh-my...)
 #### Add additional DNS servers to host
 ```
 /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -20,7 +21,7 @@ DNS2=dns1.server.com
 ```
 
 
-### Openshift upstream dns
+#### Openshift upstream dns
 ```
 cat /etc/dnsmasq.d/origin-upstream-dns.conf
 ```
