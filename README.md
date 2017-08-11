@@ -10,3 +10,11 @@ db.auth('admin','adminpass')
 ```
 mongorestore --host mongodb1.example.net --port 37017 --username user --password "pass" --db "database" /opt/backup/mongodump-2011-10-24
 ```
+
+
+#### Add additional DNS servers to host
+```
+/etc/sysconfig/network-scripts/ifcfg-eth0
+DNS1=dns1.server.com
+DNS2=dns1.server.com
+```
