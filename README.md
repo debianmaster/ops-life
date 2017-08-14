@@ -25,3 +25,7 @@ DNS2=dns1.server.com
 ```
 cat /etc/dnsmasq.d/origin-upstream-dns.conf
 ```
+
+```
+dig  @localhost -x 172.30.197.228 +short
+```
