@@ -36,6 +36,7 @@ oc run rhel-toolbox --image=registry.access.redhat.com/rhel7/rhel-tools --restar
 ```
 ### Openshift Debugging steps
 #### Network 
+https://access.redhat.com/solutions/2529411
 ```sh
 dig  @localhost -x 172.30.128.67 +short
 host docker-registry-default.svc.local
