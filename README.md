@@ -29,3 +29,8 @@ cat /etc/dnsmasq.d/origin-upstream-dns.conf
 ```
 dig  @localhost -x 172.30.197.228 +short
 ```
+
+### Openshift Debugging tools
+```
+oc run rhel-toolbox --image=registry.access.redhat.com/rhel7/rhel-tools --restart=Never --attach -i --tty
+```
