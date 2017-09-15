@@ -41,3 +41,7 @@ https://access.redhat.com/solutions/2529411
 dig  @localhost -x 172.30.128.67 +short
 host docker-registry-default.svc.local
 ```
+
+
+### Proxy
+/etc/rhsm/rhsm.conf
