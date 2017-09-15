@@ -44,6 +44,6 @@ host docker-registry-default.svc.local
 
 
 ### check proxy config at following locations
-/etc/rhsm/rhsm.conf
-/etc/yum.conf
-/etc/sysconfig/docker
+/etc/rhsm/rhsm.conf   
+/etc/yum.conf   
+/etc/sysconfig/docker    
