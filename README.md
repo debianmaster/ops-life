@@ -51,4 +51,14 @@ host docker-registry-default.svc.local
 ### check proxy config at following locations
 /etc/rhsm/rhsm.conf   
 /etc/yum.conf   
-/etc/sysconfig/docker    
+/etc/sysconfig/docker
+
+
+
+## Azure (Oh-My..)
+#### IF you want to attach storage to a Blob based root disks
+> If error = Addition of a managed disk to a VM with blob based disks is not supported   
+```sh
+az vm unmanaged-disk  attach -g ocp-rg --vm-name ocp-node-1  --size-gb 50   --new
+```
+
