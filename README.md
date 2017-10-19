@@ -9,7 +9,7 @@ db.auth('admin','adminpass')
 
 #### Take db backup
 ```
-mongodump --host mongodb.example.net --port 27017 --username user --password "pass" --db "database" --out /data/backup/
+mongodump --host mongodb.example.net --port 27017 --username user --password "pass" --db "database" --authenticationDatabase="targetdb" --out /data/backup/
 ```
 #### Restore a database
 ```
