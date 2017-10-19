@@ -6,6 +6,11 @@ mongo --host 127.0.0.1
 use admin
 db.auth('admin','adminpass')
 ```
+
+#### Take db backup
+```
+mongodump --host mongodb.example.net --port 27017 --username user --password "pass" --db "database" --out /data/backup/
+```
 #### Restore a database
 ```
 mongorestore --host mongodb1.example.net --port 37017 --username user --password "pass" --db "database" /opt/backup/mongodump-2011-10-24
