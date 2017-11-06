@@ -72,4 +72,4 @@ docker-storage-setup --reset
 ```
 ### Get rid of satellite repos. 
 ```sh
-asible all -m file -a 'dest=' #wip
+asible all -m file -a 'dest= status=absent' #wip
