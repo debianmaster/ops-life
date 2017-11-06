@@ -64,3 +64,9 @@ host docker-registry-default.svc.local
 az vm unmanaged-disk  attach -g ocp-rg --vm-name ocp-node-1  --size-gb 50   --new
 ```
 
+### Reset Docker storage
+```sh
+systemctl stop docker
+rm -rf /var/lib/docker
+docker-storage-setup --reset
+```
