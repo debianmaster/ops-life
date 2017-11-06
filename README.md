@@ -70,3 +70,6 @@ systemctl stop docker
 rm -rf /var/lib/docker
 docker-storage-setup --reset
 ```
+### Get rid of satellite repos. 
+```sh
+asible all -m file -a 'dest=' #wip
