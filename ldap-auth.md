@@ -1,4 +1,6 @@
 
+https://docs.openshift.com/container-platform/3.6/install_config/configuring_authentication.html    
+
 ```yaml
   identityProviders:
   - name: "my_ldap_provider"
