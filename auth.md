@@ -1,4 +1,12 @@
 
+## HTPasswd
+```sh
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
+openshift_master_htpasswd_users={'user1': '<pre-hashed password>', 'user2': '<pre-hashed password>'
+```
+
+
+## LDAP
 https://docs.openshift.com/container-platform/3.6/install_config/configuring_authentication.html   
 
 > hosts file 
