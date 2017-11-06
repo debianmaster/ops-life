@@ -52,6 +52,8 @@ host docker-registry-default.svc.local
 /etc/rhsm/rhsm.conf   
 /etc/yum.conf   
 /etc/sysconfig/docker
+/etc/environment
+/etc/ansible/hosts
 
 
 
