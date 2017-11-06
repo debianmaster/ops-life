@@ -73,3 +73,8 @@ docker-storage-setup --reset
 ### Get rid of satellite repos. 
 ```sh
 asible all -m file -a 'dest= status=absent' #wip
+```
+### NO_PROXY for openshift
+```sh
+172.17.0.0/16,.domain.nodes.com,172.30.0.0/16
+```
