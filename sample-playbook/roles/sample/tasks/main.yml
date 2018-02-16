@@ -1,0 +1,8 @@
+---
+- copy:
+    src: "/etc/letsencrypt/archive"
+    dest: "/etc/origin/master/"
+  become: true
+  ignore_errors: false
+  delegate_to: "{{master_public_ip}}"
+  remote_user: "{{amazon_user}}"
