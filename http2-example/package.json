@@ -1,0 +1,10 @@
+{
+  "name": "http2-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "spdy": "^3.4.7"
+  }
+}
