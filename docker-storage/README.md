@@ -1,5 +1,6 @@
 ```
 docker-storage-setup --reset
+rm -rf /var/lib/docker
 ```
 
 if this fails complaining 2 docker-vg volume
