@@ -9,3 +9,9 @@ use  vgremove --selector uuid='asfasdfasdfasdfsf'
 
 > how confirm what device docker-vg is mappe to
 `lsblk`
+
+
+>  list volumes
+`lvs`
+`lvdisplay`
+
