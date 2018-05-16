@@ -17,6 +17,7 @@ sudo python http.py
 ```
 
 
+
 > https.py
 ```command
 $ openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
@@ -32,3 +33,5 @@ httpd.serve_forever()
 ```command
 sudo python https.py
 ```
+Note:- 
+> This will expose current folder on web
