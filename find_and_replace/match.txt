@@ -1,0 +1,2 @@
+.filter('webhookURL', function(canIFilter, APIService, DataService, SecretsService) {
+    return function(buildConfig, type, secret, project, webhookSecrets) {
