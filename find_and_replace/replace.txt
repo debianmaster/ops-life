@@ -1,0 +1,13 @@
+
+ .filter('smWebURL', function(routeHostFilter){
+    return function(route, host, omitPath){
+        var scheme = (route.spec.tls && route.spec.tls.tlsTerminationType !== "") ? "https" : "http";
+        var url = scheme + "://watch." + (host || routeHostFilter(route));
+        if (route.spec.path && !omitPath) {
+            url += route.spec.path;
+        }
+        return url;
+    };
+  })
+.filter('webhookURL', function(canIFilter, APIService, DataService, SecretsService) {
+    return function(buildConfig, type, secret, project, webhookSecrets) {
