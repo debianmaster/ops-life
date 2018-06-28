@@ -24,7 +24,11 @@ mongorestore --host mongodb1.example.net --port 37017 --username user --password
 DNS1=dns1.server.com
 DNS2=dns1.server.com
 ```
-
+```sh
+cat /etc/dnsmasq.d/origin-upstream-dns.conf
+server=192.168.119.10
+server=192.168.119.11
+```
 
 #### Openshift upstream dns
 ```
