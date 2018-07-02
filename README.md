@@ -29,6 +29,9 @@ cat /etc/dnsmasq.d/origin-upstream-dns.conf
 server=192.168.119.10
 server=192.168.119.11
 ```
+```sh
+cat /etc/resolv.conf | grep nameserver | sed 's/nameserver /server=/g' >> /etc/dnsmasq.d/origin-upstream-dns.conf
+```
 
 #### Openshift upstream dns
 ```
