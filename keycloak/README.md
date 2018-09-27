@@ -81,7 +81,9 @@ curl --request POST \
 ```
 
 
-
+### To see realm urls
+```sh
+http://localhost:8080/auth/realms/odoo/.well-known/openid-configuration```
 
 
 
