@@ -1,3 +1,10 @@
+> One line command
+```sh
+python -m SimpleHTTPServer 8001
+```
+
+
+
 > http.py
 ```python
 import SimpleHTTPServer
