@@ -3,7 +3,7 @@
 import SimpleHTTPServer
 import SocketServer
 
-PORT = 443
+PORT = 80
 
 Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 
