@@ -1,5 +1,5 @@
 ```tf
-/*
+
 provider "scaleway" {
   organization = "3dujhgf87-dummy-dummy-4d2cd8fdes9cc"
   token        = "eb44dcg0-dummy-dummy-db43098765bc"
@@ -53,5 +53,5 @@ resource "scaleway_security_group_rule" "https_accept" {
   protocol  = "TCP"
   port      = 443
 }
-*/
+
 ```
