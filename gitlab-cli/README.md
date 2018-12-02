@@ -16,3 +16,5 @@ api_version = 4
 ```sh
 gitlab project create --name test11223
 ```
+
+https://python-gitlab.readthedocs.io/en/stable/cli.html
