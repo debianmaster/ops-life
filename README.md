@@ -85,3 +85,8 @@ asible all -m file -a 'dest= status=absent' #wip
 ```sh
 172.17.0.0/16,.domain.nodes.com,172.30.0.0/16
 ```
+
+### Replace in all files
+```sh
+find . -type f | xargs -n1 sed -i '' 's/old_string/new_string/g'
+```
