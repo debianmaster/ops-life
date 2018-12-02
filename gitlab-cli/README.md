@@ -15,6 +15,7 @@ api_version = 4
 
 ```sh
 gitlab project create --name test11223
+gitlab project-variable create --key=CI_ASS --value=test --project-id=9721986   #set ci variable
 ```
 
 https://python-gitlab.readthedocs.io/en/stable/cli.html
