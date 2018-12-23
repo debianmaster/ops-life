@@ -13,3 +13,12 @@ export PATH=$PATH:/usr/local/go/bin:$GOBIN
 ```sh
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 ```
+
+```sh
+mkdir -p $HOME/go/src/github.com/openshift
+cd $HOME/go/src/github.com/openshift
+git clone https://github.com/openshift/installer
+cd installer
+TAGS=libvirt hack/build.sh
+ln  ./bin/openshift-install /usr/local/bin/oi
+```
