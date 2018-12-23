@@ -7,3 +7,9 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin:$GOBIN
 ```
+
+
+
+```sh
+curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+```
