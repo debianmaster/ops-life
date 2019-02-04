@@ -1,4 +1,5 @@
 ```sh
+yum install libvirt-devel gcc-c++ -y 
 curl -O https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz
 tar -C /usr/local -xvzf  go1.11.4.linux-amd64.tar.gz
 mkdir -p ~/go/bin
