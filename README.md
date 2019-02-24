@@ -15,6 +15,8 @@ mongodump --host mongodb.example.net --port 27017 --username user --password "pa
 ```
 mongorestore --host mongodb1.example.net --port 37017 --username user --password "pass" --db "database" /opt/backup/mongodump-2011-10-24
 ```
+> inside container
+```mongorestore --drop --host localhost --port 27017 --username admin --password jbmongojbmongo --db admin --authenticationDatabase admin  /opt/app-root/src/dump```
 
 
 ## Networking (oh-my...)
