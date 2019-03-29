@@ -8,5 +8,9 @@ service docker start
 
 
 ```sh
-pip install docker-compose
+RUN COMPOSE_VERSION="1.23.2" \
+&& apk add --no-cache \
+  py-pip \
+&& pip install --no-cache-dir \
+  docker-compose==${COMPOSE_VERSION}
 ```
