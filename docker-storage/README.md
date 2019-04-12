@@ -26,3 +26,31 @@ use  vgremove --selector uuid='asfasdfasdfasdfsf'
 `lvs`
 `lvdisplay`
 
+
+##  If following error
+
+```
+[root@scw-09bef9 ~]# docker-storage-setup
+INFO: Volume group backing root filesystem could not be determined
+ERROR: Partition specification unsupported at this time.
+````
+
+
+```sh
+wipefs -f /dev/sda1
+vgcreate docker-vg /dev/sda1
+```
+```
+[root@scw-09bef9 ~]# cat /etc/sysconfig/docker-storage-setup
+#STORAGE_DRIVER=overlay2
+#DEVS=/dev/sda
+VG=docker-vg
+```
+
+```sh
+docker-storage-setup
+```
+```sh
+
+
+
