@@ -9,3 +9,8 @@ openssl req -new -x509 -days 365 -nodes -out saml.crt -keyout saml.key
 ```
 certutil -v
 ```
+
+
+```sh
+openssl req -x509 -newkey rsa:4096 -keyout domain.key -out domain.crt -days 365
+```
