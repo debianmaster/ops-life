@@ -38,13 +38,13 @@ sudo frpc -c ./frpc.ini
 ## client with ssh
 ```sh
 [common]
-server_addr = manage.run9.io
+server_addr = manage.example.io
 server_port = 6443
 
 [web]
 type = https
 local_port = 6443
-custom_domains = manage.run9.io
+custom_domains = manage.example.io
 #vhost_https_port = 9433
 #proxy_protocol_version = v2
 
@@ -53,4 +53,8 @@ type = tcp
 local_ip = 127.0.0.1
 local_port = 22
 remote_port = 11009
+```
+
+```sh
+ssh root@manage.example.io -p 11009
 ```
