@@ -58,3 +58,32 @@ remote_port = 11009
 ```sh
 ssh root@manage.example.io -p 11009
 ```
+
+
+## systemd service for server
+```sh
+vi /lib/systemd/system/frps.service
+```
+```sh
+[Unit]
+Description=Frp Server Service
+After=network.target
+
+[Service]
+Type=simple
+User=nobody
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/local/bin/frps -c /etc/frp/frps.ini
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```sh
+cat /etc/frp/frps.ini
+[common]
+bind_port = 6443
+vhost_http_port =  9043
+vhost_https_port = 9433
+```
