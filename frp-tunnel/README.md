@@ -30,3 +30,5 @@ custom_domains = manage.example.io
 ```sh
 sudo frpc -c ./frpc.ini
 ```
+
+> Given actual upstream service is running on   https://localhost:6443
