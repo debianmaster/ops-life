@@ -1,0 +1,4 @@
+## print foldernames which have space
+```
+printf '%s\n' *
+```
