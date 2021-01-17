@@ -8,3 +8,8 @@ or
 /etc/sysctl.d/net.conf 
 ```
 
+
+show connection
+```
+nmcli conn show
+```
