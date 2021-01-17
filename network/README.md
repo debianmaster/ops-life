@@ -13,3 +13,9 @@ show connection
 ```
 nmcli conn show
 ```
+
+
+clear bind server cache
+```
+rndc flush
+```
