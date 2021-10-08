@@ -19,3 +19,9 @@ clear bind server cache
 ```
 rndc flush
 ```
+
+  
+  show network devices
+  ```
+  lshw -class network -short
+  ```
