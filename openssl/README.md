@@ -8,9 +8,16 @@ echo | openssl s_client -showcerts -servername 192.168.65.2.nip.io -connect 192.
 ````
 
 
-
+# to check of req,cert and private key matching
 
 ```
-openssl x509 -noout -modulus -in cert.crt | openssl md5
-openssl rsa -noout -modulus -in privkey.txt | openssl md5
+openssl req -noout -modulus -in  server.csr | openssl md5
+(stdin)= 395cb6f3a0def959d81f8f6a26d12749
+
+openssl rsa -noout -modulus -in myserver.key | openssl md5
+(stdin)= 395cb6f3a0def959d81f8f6a26d12749
+
+openssl x509 -noout -modulus -in ssl-bundle.crt | openssl md5
+(stdin)= 395cb6f3a0def959d81f8f6a26d12749
+
 ```
