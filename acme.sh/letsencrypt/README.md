@@ -1,3 +1,10 @@
+```
+curl https://get.acme.sh | sh
+acme.sh  --issue -d keycloak.app --standalone --register-account=9chakri@gmail.com
+acme.sh  --issue -d keycloak.app --standalone
+
+```
+
 ```sh
 
 apt upgrade -y
