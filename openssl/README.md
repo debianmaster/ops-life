@@ -21,3 +21,8 @@ openssl x509 -noout -modulus -in ssl-bundle.crt | openssl md5
 (stdin)= 395cb6f3a0def959d81f8f6a26d12749
 
 ```
+
+# add a cert to pki
+```
+openssl s_client -connect devops.xyz.cloud:443 -showcerts </dev/null 2> /dev/null | sed -e '/-----BEGIN/,/-----END/!d' | tee "/usr/local/share/ca-certificates/ca.crt" >/dev/null && update-ca-certificates
+```
