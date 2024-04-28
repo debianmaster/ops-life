@@ -1,3 +1,8 @@
+> Simple self signed cert generation
+```
+openssl genrsa -out httpbin.org.key 2048
+openssl req -new -x509 -key httpbin.org.key -out httpbin.org.crt -days 365 -subj "/C=US/ST=California/L=San Francisco/O=Your Organization/OU=Your Department/CN=httpbin.org"
+```
 > Inspect cert
 ```
 openssl x509 -in /config/keys/cert.crt -noout -text
