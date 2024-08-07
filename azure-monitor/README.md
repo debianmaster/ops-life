@@ -7,3 +7,11 @@ customMetrics
 | order by timestamp desc
 
 ```
+
+## List all unique metrics by count
+
+```
+customMetrics
+| summarize count() by name
+| order by count_ desc
+```
