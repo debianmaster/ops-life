@@ -8,7 +8,24 @@ dokku domains:set-global yourdomain.com
 dokku apps:create ruby-getting-started
 ```
 
+## on local machine
+```
+cat ~/.ssh/id_rsa.pub
+> Copy the public key to dokku server /home/dokku/.ssh/authorized_keys
+git clone https://github.com/heroku/ruby-getting-started
+cd ruby-getting-started
+git remote add dokku dokku@yourdomain.com:ruby-getting-started
+git push dokku main
 
+```
+
+## Accessing the application
+```bash
+access your application at http://ruby-getting-started.yourdomain.com
+```
+
+
+## Bonus
 ## set custom rate limits
 https://www.joseferben.com/posts/rate-limiting-with-dokku
 ```bash
@@ -37,18 +54,4 @@ location    / {
 ### restart 
 ```
 dokku ps:restart --all
-```
-
-## on local machine
-```
-cat ~/.ssh/id_rsa.pub
-> Copy the public key to dokku server /home/dokku/.ssh/authorized_keys
-git remote add dokku dokku@yourdomain.com:ruby-getting-started
-git push dokku main
-
-```
-
-## Accessing the application
-```bash
-access your application at http://ruby-getting-started.yourdomain.com
 ```
